@@ -96,7 +96,7 @@ app.post("/api/visitors", function (request, response) {
  * Endpoint to get a JSON array of all the visitors in the database
  * REST API example:
  * <code>
- * GET http://localhost:3000/api/visitors
+ * GET http://localhost:3001/api/visitors
  * </code>
  *
  * Response:
@@ -196,7 +196,7 @@ if(cloudant) {
 //serve static file (index.html, images, css)
 app.use(express.static(__dirname + '/views'));
 
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 3001
 app.listen(port, function() {
     console.log("To view your app, open this link in your browser: http://localhost:" + port);
 });
